@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="background">
+    <h1> Hei, Jeg heter Alexander </h1>
+
+    <img src="img/Skjermbilde 2023-01-12 222053.png" alt="bilde av meg" width="250px">
+
+    <h2> Mine hobbyer er </h2>
+    
+    <ul>
+        <li> Gaming </li>
+        <li> Lesing </li>
+        <li> Se Film/Serier </li>
+    </ul>
+
+    <div>
+        <button onclick="lightMode()">Light</button>
+        <button onclick="darkMode()">Dark</button>
+    </div>
+
+    <script>
+        function lightMode(){
+            document.getElementById('background').style.backgroundColor = 'white'
+            document.getElementById('background').style.color = 'black'
+        }
+
+        function darkMode(){
+            document.getElementById('background').style.backgroundColor = '#303030'
+            document.getElementById('background').style.color = 'whitesmoke'
+        }
+    </script>
+</body>
+</html>
